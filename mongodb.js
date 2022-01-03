@@ -43,4 +43,4 @@ app.get('/',async(req,res)=>{
 //         console.log(e);
 //     }
 // });
-app.listen(3000,(e)=>console.log(e));
+app.listen(process.env.PORT || 3000,(e)=>console.log(e));
