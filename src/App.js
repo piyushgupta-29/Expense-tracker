@@ -15,18 +15,14 @@ let DUMMY_EXPENSE = [
   {
     id: 2,
     date: "Thu Dec 30 2021 01:33:36 GMT+0530 (India Standard Time)",
-    title: "Rent",
+    title: "Car",
     amount: 1000
   }
 ];
 
 const App = () => {
-    
 
     const [expenses, setExpenses] = useState(DUMMY_EXPENSE);
-
-    
-
     const addExpenseHandler = (expense) => {
         setExpenses([expense,...expenses]);
         console.log(expense);
